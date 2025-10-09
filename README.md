@@ -1,35 +1,46 @@
-# Escrita na tela LCD
-Texto escrito em uma tela LCD
+# Escrita na tela LCD🤖
 
-__Materiais__
+Este circuito utiliza um display LCD 16x2 conectado a um Arduino para exibir mensagens e realizar uma contagem de tempo em segundos. Assim que o sistema é iniciado, a tela mostra uma mensagem personalizada (“GITHUB ANTONY”) e, em seguida, começa a atualizar continuamente o tempo de execução do programa. O projeto é simples, mas excelente para entender o funcionamento básico da biblioteca LiquidCrystal, além de servir como base para aplicações que envolvem monitoramento em tempo real, como cronômetros, temporizadores ou sistemas de status.
 
- ●Tela LCD
+## Materiais⚙️
 
- ●Potenciometro
+<img width="502" height="260" alt="image" src="https://github.com/user-attachments/assets/7c5d3d2d-9fb9-4264-842c-91cdb0c58e3c" />
 
- ●Arduino Uno
+ 
+ * Tela LCD
 
- ![Opera Instantâneo_2024-12-12_212413_www tinkercad com](https://github.com/user-attachments/assets/c672b9b5-98b2-437a-8b14-ac83267646e4)
+ * Potenciometro
 
-# Esquema de Conexão:
+ * Arduino Uno
 
-__Display LCD 16x2:__
 
-Pinos de Controle:
+## Montagem🛠️
 
-RS: Conecte ao pino digital 12 do Arduino.
 
-E: Conecte ao pino digital 11 do Arduino.
+<img width="50%" alt="Imagem do WhatsApp de 2025-10-03 à(s) 09 32 58_2a1dab3c" src="https://github.com/user-attachments/assets/c672b9b5-98b2-437a-8b14-ac83267646e4" />
 
-Pinos de Dados:
+Monte o Arduino na protoboard e conecte as linhas de energia para distribuir 5V e GND. Posicione o display LCD 16x2 na parte lateral da protoboard, deixando espaço para o potenciômetro logo acima dele, facilitando o ajuste de contraste.
 
-D4, D5, D6, D7: Conecte aos pinos digitais 5, 4, 3, 2 do Arduino, respectivamente.
+Conecte o potenciômetro de forma que seus terminais fiquem ligados ao positivo e ao negativo da alimentação, com o pino central voltado para o pino de contraste do LCD. As conexões do display são organizadas com fios curtos e bem distribuídos entre os pinos digitais do Arduino e a fileira superior da protoboard.
 
-__Pino de Contraste:__
+Depois de concluída a montagem, verifique se os trilhos de 5V e GND estão corretamente ligados ao Arduino. Conecte o cabo USB para alimentar o circuito e gire o potenciômetro até que o texto apareça no display, confirmando o funcionamento correto.
 
-Conecte o meio do potenciômetro ao pino V0 do LCD, um terminal ao GND e o outro ao 5V.
+## Esquema de Conexão⚡️
 
-# Código
+| Componente                  | Pino do Arduino       |
+| --------------------------- | --------------------- |
+| RS -> LCD                   | D12                   |
+| E -> LCD                    | D11                   |
+| D4 -> LCD                   | D5                    |
+| D5 -> LCD                   | D4                    |
+| D6 -> LCD                   | D3                    |
+| D7 -> LCD                   | D2                    |
+| V0 -> LCD (Contraste)       | Meio do potenciômetro |
+| Potenciômetro -> Terminal 1 | GND                   |
+| Potenciômetro -> Terminal 2 | 5V                    |
+
+
+## Código💻
 
 ```
 #include <LiquidCrystal.h> //Inclui a biblioteca do LiquidCrytal
@@ -44,6 +55,6 @@ void loop() {
   lcd.print("s"); //Escreve a letra s para representar os segundos
 }
 ```
-__Projeto no simulador__
+## Projeto no TinkerCAD❗
 
 https://www.tinkercad.com/things/8pVD0WnAPAc-display-lcd-16x2
