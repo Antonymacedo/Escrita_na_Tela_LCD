@@ -58,3 +58,15 @@ void loop() {
 ## Projeto no TinkerCAD❗
 
 https://www.tinkercad.com/things/8pVD0WnAPAc-display-lcd-16x2
+
+## Resultado👾
+
+
+<img width="66%" alt="Imagem do WhatsApp de 2025-10-03 à(s) 09 32 58_2a1dab3c" src="https://github.com/user-attachments/assets/2e71b565-31fe-486d-b301-72e1b3865c60" />
+
+___________________________________________________________________________________________________________________________________________________________________________________
+
+
+https://github.com/user-attachments/assets/ab484c86-4815-43b7-a5cd-9c4a0c2dbe9f
+
+
