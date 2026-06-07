@@ -6,18 +6,21 @@ Este circuito utiliza um display LCD 16x2 conectado a um Arduino para exibir men
 
 <img width="502" height="260" alt="image" src="https://github.com/user-attachments/assets/7c5d3d2d-9fb9-4264-842c-91cdb0c58e3c" />
 
- 
- * Tela LCD
-
- * Potenciometro
-
- * Arduino Uno
+| Componente | Quantidade |
+|---|---|
+|  Tela LCD | 1|
+| Potenciometro |1|
+|  Arduino Uno |1|
 
 
 ## Montagem🛠️
 
 
 <img width="50%" alt="Imagem do WhatsApp de 2025-10-03 à(s) 09 32 58_2a1dab3c" src="https://github.com/user-attachments/assets/c672b9b5-98b2-437a-8b14-ac83267646e4" />
+
+> Projeto no TinkerCAD❗
+
+> https://www.tinkercad.com/things/8pVD0WnAPAc-display-lcd-16x2
 
 Monte o Arduino na protoboard e conecte as linhas de energia para distribuir 5V e GND. Posicione o display LCD 16x2 na parte lateral da protoboard, deixando espaço para o potenciômetro logo acima dele, facilitando o ajuste de contraste.
 
@@ -55,9 +58,7 @@ void loop() {
   lcd.print("s"); //Escreve a letra s para representar os segundos
 }
 ```
-## Projeto no TinkerCAD❗
 
-https://www.tinkercad.com/things/8pVD0WnAPAc-display-lcd-16x2
 
 ## Resultado👾
 
@@ -70,3 +71,12 @@ ________________________________________________________________________________
 https://github.com/user-attachments/assets/ab484c86-4815-43b7-a5cd-9c4a0c2dbe9f
 
 
+
+
+## Sobre o Projeto 📋
+ 
+Desenvolvido como projeto técnico no curso de **Eletrotécnica do CEFET-MG**, integrando conceitos de eletrônica analógica, programação embarcada e IoT.
+ 
+**Autores:** Antony Macedo, Isaac  
+**Ambiente:** PlatformIO + ESP32 Arduino Core  
+**Licença:** MIT
